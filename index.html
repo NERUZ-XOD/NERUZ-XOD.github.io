@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neeraj M | Student Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <!-- Game-style loading screen -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="pixel-loader">
+            <div class="loading-text">LOADING...</div>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation Menu -->
+    <nav class="game-nav">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="pixel-text">&lt;DEV/&gt;</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">HOME</a></li>
+                <li><a href="#about" class="nav-link">ABOUT</a></li>
+                <li><a href="#skills" class="nav-link">SKILLS</a></li>
+                <li><a href="#projects" class="nav-link">PROJECTS</a></li>
+                <li><a href="#contact" class="nav-link">CONTACT</a></li>
+            </ul>
+            <!-- Control Panel in Navbar -->
+            <div class="nav-controls">
+                <div class="achievement-btn">
+                    <span class="nav-control-icon">🏆</span>
+                </div>
+                <div class="sound-btn">
+                    <span class="nav-control-icon">🔇</span>
+                </div>
+                <div class="crt-btn">
+                    <span class="nav-control-icon">📺</span>
+                </div>
+                <div class="theme-dropdown">
+                    <div class="theme-btn">
+                        <span class="nav-control-icon">🎨</span>
+                        <span class="dropdown-arrow">▼</span>
+                    </div>
+                    <div class="theme-options">
+                        <button class="theme-option" data-theme="classic">CLASSIC</button>
+                        <button class="theme-option" data-theme="cyberpunk">CYBERPUNK</button>
+                        <button class="theme-option" data-theme="terminal">TERMINAL</button>
+                        <button class="theme-option" data-theme="synthwave">SYNTHWAVE</button>
+                    </div>
+                </div>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="stars"></div>
+        <div class="hero-content">
+            <!-- Interactive 3D Cube (replacing character sprite) -->
+            <div class="cube-container">
+                <div class="interactive-cube" id="interactive-cube">
+                    <div class="cube-face front">
+                        <div class="face-content"></div>
+                    </div>
+                    <div class="cube-face back">
+                        <div class="face-content"></div>
+                    </div>
+                    <div class="cube-face right">
+                        <div class="face-content"></div>
+                    </div>
+                    <div class="cube-face left">
+                        <div class="face-content"></div>
+                    </div>
+                    <div class="cube-face top">
+                        <div class="face-content"></div>
+                    </div>
+                    <div class="cube-face bottom">
+                        <div class="face-content"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-text">
+                <h1 class="glitch-text" data-text="NEERAJ M">NEERAJ M</h1>
+                <h2>I'm a <span class="highlight">Student Developer</span></h2>
+                <p class="hero-description">
+                    Class 12 Student • Kendriya Vidyalaya Kollam • AI Collaboration Enthusiast
+                </p>
+                <div class="hero-buttons">
+                    <a href="#about" class="pixel-btn primary pulse">START GAME</a>
+                    <a href="#projects" class="pixel-btn secondary floating">VIEW PROJECTS</a>
+                    <button id="mini-game-btn" class="pixel-btn secondary">PLAY MINI-GAME</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2 class="section-title">ABOUT_ME.exe</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="terminal-window">
+                        <div class="terminal-header">
+                            <div class="terminal-buttons">
+                                <span class="btn red"></span>
+                                <span class="btn yellow"></span>
+                                <span class="btn green"></span>
+                            </div>
+                            <span class="terminal-title">about_me.txt</span>
+                        </div>
+                        <div class="terminal-body">
+                            <p class="terminal-line">> Initializing developer profile...</p>
+                            <p class="terminal-line">> Loading personal data...</p>
+                            <p class="terminal-line">> Name: Neeraj M</p>
+                            <p class="terminal-line">> Status: Class 12 Student</p>
+                            <p class="terminal-line">> School: Kendriya Vidyalaya Kollam</p>
+                            <p class="terminal-line">> Mission: Building epic stuff with AI buddies!</p>
+                            <p class="terminal-line">> Passion: Coding, Gaming, and Learning</p>
+                            <p class="terminal-line">> Current Project: CLI Life-RPG System</p>
+                            <p class="terminal-line">> Dream: Creating amazing digital experiences</p>
+                            <p class="terminal-line terminal-cursor">_</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <div class="stat-icon">🎓</div>
+                        <div class="stat-number">12</div>
+                        <div class="stat-label">Class</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">🤖</div>
+                        <div class="stat-number">AI</div>
+                        <div class="stat-label">Powered</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">🎮</div>
+                        <div class="stat-number">∞</div>
+                        <div class="stat-label">Dreams</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <h2 class="section-title">SKILL_TREE.json</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3 class="category-title">FRONTEND</h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <span class="skill-name">HTML5</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="70"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">CSS3</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="60"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">JavaScript</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="50"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3 class="category-title">PYTHON & GAME DEV</h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <span class="skill-name">Python</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="65"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Tkinter</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="70"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Game Dev</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="60"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="category-title">TOOLS</h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <span class="skill-name">VS Code</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Git/GitHub</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="60"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">AI Collaboration</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="90"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <h2 class="section-title">PROJECT_ARCHIVE</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="pixel-placeholder">
+                            <span>🎮 2048</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">AI-Powered 2048 Game</h3>
+                        <p class="project-description">
+                            An epic GUI 2048 game built with Python & Tkinter, featuring stunning AI-generated pixel art backgrounds, custom number tiles, and immersive sound effects. Created with AI collaboration!
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Tkinter</span>
+                            <span class="tech-tag">AI Art</span>
+                            <span class="tech-tag">Game Dev</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/NERUZ-XOD/2048-game" class="project-link" target="_blank">CODE</a>
+                            <a href="https://github.com/NERUZ-XOD/2048-game/releases" class="project-link" target="_blank">DOWNLOAD</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="pixel-placeholder">
+                            <span>⚔️ RPG</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">CLI Life-RPG System</h3>
+                        <p class="project-description">
+                            An epic command-line RPG experience currently in development! This will be a text-based adventure game with character progression, quests, and immersive storytelling. Built with AI collaboration!
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">CLI</span>
+                            <span class="tech-tag">RPG</span>
+                            <span class="tech-tag">AI</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link disabled">COMING SOON</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="pixel-placeholder">
+                            <span>🌐 WEB</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Retro Portfolio Website</h3>
+                        <p class="project-description">
+                            This very website! A pixel art-themed portfolio showcasing my journey as a student developer. Features retro gaming aesthetics, smooth animations, and modern web technologies.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Responsive</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/NERUZ-XOD" class="project-link" target="_blank">CODE</a>
+                            <a href="#home" class="project-link">DEMO</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mini-Game Section -->
+    <section id="mini-game" class="mini-game-section" style="display: none;">
+        <div class="container">
+            <h2 class="section-title">MINI_GAME.exe</h2>
+            <div class="game-container">
+                <div class="game-header">
+                    <div class="game-title">PIXEL SNAKE</div>
+                    <div class="game-scores">
+                        <div class="game-best-score">Best: <span id="best-score">0</span></div>
+                        <div class="game-score">Score: <span id="game-score">0</span></div>
+                    </div>
+                    <button id="close-game" class="pixel-btn secondary">CLOSE</button>
+                </div>
+                <canvas id="game-canvas" width="400" height="400"></canvas>
+                <div class="game-controls">
+                    <p>Desktop: Use WASD or Arrow Keys | Mobile: Swipe to control!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">CONNECT.dll</h2>
+            <div class="contact-content">
+                <div class="contact-text">
+                    <h3>Ready to Collaborate?</h3>
+                    <p>Let's build something amazing together! I'm always excited to work on new projects with AI coding buddies and fellow developers.</p>
+                </div>
+                <div class="contact-links">
+                    <a href="https://github.com/NERUZ-XOD" class="contact-link" target="_blank">
+                        <div class="contact-icon"><i class="fab fa-github"></i></div>
+                        <span>GITHUB</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/neerajm2007/" class="contact-link" target="_blank">
+                        <div class="contact-icon"><i class="fab fa-linkedin"></i></div>
+                        <span>LINKEDIN</span>
+                    </a>
+                    <a href="https://x.com/neerajm_dev" class="contact-link" target="_blank">
+                        <div class="contact-icon"><i class="fab fa-x-twitter"></i></div>
+                        <span>X</span>
+                    </a>
+                    <a href="https://www.instagram.com/neerajm.dev/" class="contact-link" target="_blank">
+                        <div class="contact-icon"><i class="fab fa-instagram"></i></div>
+                        <span>INSTAGRAM</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Neeraj M | Built with 💖 and AI collaboration</p>
+            <p class="footer-subtext">Powered by dreams, caffeine, and endless curiosity</p>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+</body>
+</html>
